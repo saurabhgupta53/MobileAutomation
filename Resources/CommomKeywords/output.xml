@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0b1 (Python 3.9.0 on win32)" generated="20210201 02:54:35.870" rpa="false">
+<suite id="s1" name="Commonkeywords" source="C:\Users\RAJAT GUPTA\PycharmProjects\MobileAutomation\Resources\CommomKeywords\commonkeywords.robot">
+<test id="s1-t1" name="TC1">
+<kw name="Open Calculator App">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${APPIUM_SERVER1}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=platformVersion=${PLATFORM_VERSION}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+</arguments>
+<assign>
+<var>${androiddriver1}</var>
+</assign>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210201 02:54:48.501" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20210201 02:54:48.492" endtime="20210201 02:54:48.501"></status>
+</kw>
+<msg timestamp="20210201 02:54:48.505" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20210201 02:54:48.512" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'app' option is required for reinstall
+</msg>
+<status status="FAIL" starttime="20210201 02:54:36.665" endtime="20210201 02:54:48.512"></status>
+</kw>
+<status status="FAIL" starttime="20210201 02:54:36.663" endtime="20210201 02:54:48.513"></status>
+</kw>
+<status status="FAIL" starttime="20210201 02:54:36.661" endtime="20210201 02:54:48.515">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'app' option is required for reinstall
+</status>
+</test>
+<status status="FAIL" starttime="20210201 02:54:35.878" endtime="20210201 02:54:48.521"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Commonkeywords">Commonkeywords</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210201 02:54:48.505" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

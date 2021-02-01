@@ -1,0 +1,9 @@
+Device:
+   pocof1:
+      Device_Name: 9449dfda
+      Platform_Name: Android
+      Platform_Version: '10.0'
+      Server:  http://localhost:4723/wd/hub
+      Automation:  UIAutomator2
+      #App_package:
+      #App_activity:
